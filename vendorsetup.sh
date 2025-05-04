@@ -8,6 +8,6 @@ rm -rf vendor/asus
 git clone --depth=1 https://github.com/SonicBSV/proprietary_vendor_asus-4.4 -b lineage-18.1 vendor/asus
 
 rm -rf vendor/lineage-priv/keys
-git clone --depth=1 https://github.com/sotodrom/keys vendor/lineage-priv/keys
+git clone https://github.com/sotodrom/keys vendor/lineage-priv/keys
 
 export TZ=Asia/Jakarta
