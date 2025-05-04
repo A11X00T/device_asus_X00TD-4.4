@@ -6,3 +6,6 @@ git clone https://github.com/SonicBSV/device_asus_sdm660-common-4.4 -b lineage-1
 
 rm -rf proprietary/vendor/asus-4.4
 git clone https://github.com/SonicBSV/proprietary_vendor_asus-4.4 -b lineage-18.1 proprietary/vendor/asus-4.4
+
+rm -rf vendor/lineage-priv/keys
+git clone https://github.com/sotodrom/keys vendor/lineage-priv/keys
