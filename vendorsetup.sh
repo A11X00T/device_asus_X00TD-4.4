@@ -1,5 +1,7 @@
 rm -rf kernel/asus/sdm660
-git clone --recursive https://github.com/SonicBSV/android_kernel_asus_sdm660_4.4 -b R kernel/asus/sdm660
+git clone --recursive https://github.com/electrolaboratory/msm-4.4 -b hmp kernel/asus/sdm660
+rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
+rm -rf kernel/asus/sdm660/KernelSU-Next/website
 
 rm -rf hardware/qcom-caf/msm8998/audio
 git clone https://github.com/pkm774/hardware_qcom-caf_msm8998_audio -b audio-hal.lnx.8.0.r14-rel hardware/qcom-caf/msm8998/audio
