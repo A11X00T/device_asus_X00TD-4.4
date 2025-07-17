@@ -1,14 +1,6 @@
 rm -rf kernel/asus/sdm660
-git clone --recursive https://github.com/electrolaboratory/msm-4.4 -b hmp kernel/asus/sdm660
-rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
-rm -rf kernel/asus/sdm660/KernelSU-Next/website
-
-rm -rf hardware/qcom-caf/msm8998/audio
-git clone https://github.com/pkm774/hardware_qcom-caf_msm8998_audio -b audio-hal.lnx.8.0.r14-rel hardware/qcom-caf/msm8998/audio
-rm -rf hardware/qcom-caf/msm8998/media
-git clone https://github.com/pkm774/hardware_qcom-caf_media_msm8998 -b 11 hardware/qcom-caf/msm8998/media
-rm -rf hardware/qcom-caf/msm8998/display
-git clone https://github.com/pkm774/hardware_qcom-caf_display_msm8998 -b 11 hardware/qcom-caf/msm8998/display
+git clone --depth=1 --recursive https://github.com/Kneba/kernel_asus_sdm660 -b uclamp kernel/asus/sdm660
+rm -rf system/extras/su
 
 rm -rf device/asus/sdm660-common
 git clone --depth=1 https://github.com/SonicBSV/device_asus_sdm660-common-4.4 -b lineage-18.1 device/asus/sdm660-common
