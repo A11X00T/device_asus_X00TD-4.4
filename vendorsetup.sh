@@ -3,7 +3,7 @@ git clone --depth=1 --recursive https://github.com/Kneba/kernel_asus_sdm660 -b u
 rm -rf system/extras/su
 
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/SonicBSV/device_asus_sdm660-common-4.4 -b Havoc device/asus/sdm660-common
+git clone --depth=1 https://github.com/A11X00T/device_asus_sdm660-common-4.4 -b Havoc device/asus/sdm660-common
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/SonicBSV/proprietary_vendor_asus-4.4 -b lineage-18.1 vendor/asus
