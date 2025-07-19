@@ -1,9 +1,8 @@
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/Kneba/kernel_asus_sdm660 -b uclamp kernel/asus/sdm660
-rm -rf system/extras/su
+git clone --depth=1 --recursive https://github.com/SonicBSV/android_kernel_asus_sdm660_4.4 -b R kernel/asus/sdm660
 
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/A11X00T/device_asus_sdm660-common-4.4 -b lineage-18.1 device/asus/sdm660-common
+git clone --depth=1 https://github.com/A11X00T/device_asus_sdm660-common-4.4 -b Corvus device/asus/sdm660-common
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/SonicBSV/proprietary_vendor_asus-4.4 -b lineage-18.1 vendor/asus
